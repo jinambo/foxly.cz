@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foxli - webové studio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/range.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="foxli" width="70%">
+        </div>
+        <i class="fas fa-bars"></i> <!-- burger -->
+        <div class="menu">
+            <a class="hover_effect" href="#">Služby</a>
+            <a class="hover_effect" href="#">Reference</a>
+            <a class="hover_effect" href="#">Kontakt</a>
+            <a class="hover_effect" href="#">Blog</a>
+        </div>
+        <img class="search" width="3%" src="data:image/png;base64,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">
+        <div class="finder">
+            <input type="text" placeholder="Hledat...">
+            <div class="find_btn"><img class="search" width="13.5%" src="data:image/png;base64,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"></div>
+        </div>
+        </div>
+    </nav>
+    <header>
+        <h3>Webem k úspěchu.</h3>
+        <h5>Pokud se dnes někdo chce prosadit nejen lokáně, je téměř nemožné to dokázat bez pořádného internetového marketingu a proto jsem tu my. <br>
+            Weby a e-shopy navrhneme, nakreslíme, nakódujeme a naprogramuje na míru, tak aby byly funkční nejen systémově, ale i graficky.
+        </h5>
+        <button>Chci web <i class="fas fa-arrow-right"></i></button>
+    </header>
+
+    <div class="offer">
+        <div class="col">
+                <img width="9%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQtSURBVHhe7ZzP6w1RGMZvLBSlKDaKjWLlx0YpSzs2ivgTiJ1sFFZkZcHSTrJk68dGYeN3oZRkIxvslIh4nnvn/XpN58w9Z+a8c+7cez711MyZmfO+5+m8c2a+997vqFAoFAqFQqFQKMwO6yoVWkDjXleaVRM3QFegD9AP6CN0FdoMZUXM+1NplkxkHuuhPdAXSHLU+gYdgLKgzZMZKNu5TZTc3kI0iXndh3ZBK6Ht0C2I7T+hg1Cv1M3jvqstBzoP0TVoOVTnJsTj9yDXcROajMptYj2+bL+CXLnshHicM7UXQgwKOccCV1zd5jJxFcRjvEea40rQR8y5KWiKp4/VTdwNyTWmNCUoPIIeTjbHhFyTgpA4+hwxkfc8LixsuwiZEZIgeVBJE3ptW3T/b6p9H/pcmni92v4Epc5rCR20rQEp+nCh+xUjtkBN1K/hIw6fE00IGXi9bAXrcq73J9uxJnL17ZqLk9ABu8qWWJazqx/dNs3EVHk0YhWka79N1+tjPhO7xo8iVbBU5ey7Tvevz6mb2DZuJ1IETVHOTefX+9fniomx8ZJiFTy03zbx9TU0kY84WcwTYgeRanX2Hff1r9HXZjVP8A3Ghatsiatd93uCDRVN8Xz9a2Ly7Q2rpNjPscnmmK5xrPJMQqrkfGXo6z+kbEmq/ExJkeS0cq73O9iy9ZE62a79pc6nF2KTXuiy9RGT/MKXrY+2g+DHjl0GPxfmCbGD8Zm3EGXrI3RQTTNvYcrWx7TBlbINQA9Sv56Vso2Ag9OvZ6VsO2BZtkehuTbTsmyPQ3M9I63LdtrxQWNZtpq5NNGybMkp6ORkc8xcmWhdtoTfpvo82VxiLkzsq2y3Qtk/901N32Ur1PsfpIm5ypa4+h+UibnL1scgTLQu21gGtTpblm3b17PBrM6WZdvl9WwQq7N12cYOdlCrs2XZamIGO5jVeRn0AmJw6hLEn02FEpt86PmDWZ33QmKe6DnEH6tMo23SqQY7E6vzDYgBL0D7oHfV/mmoia7Jphhs9tV5DfQd+g1tZAPYDzH4k/Gem1RJdu3HVeapcgtCHi1uj/cmrIbY9gt6DHEm6nJOnWBsf77VmaTObSq81zHY4fHeP9im9QziwmKVYEy/vtXZKjcvOyAG+wqtYEMNzkR9T+TqbJlgqAHZy1bg/xpgwMvjPT9yTxRZJtjGiCzmccZx5jEofybvgwvLeagP84QYQ7KYR45AYso5Niho7iHoLsTVWc57CfWVYIgx2cwjdyAxhqKJ2yCWtcxMio84/PkoH7b5xtInTQZlNW8TpGeWS08hfvdlLZQTl1FZzSNnIW2WiDOPM7DpnpiDumFZzWMZ8r/8iGmcibzX8Z7nepSZFbSJ2cwj8oeD99AZSF7fhoCYmM08wpmWY0FIBY3LZl6hUCgUCoVCoVD4j9HoL0Bm3gzT6rPhAAAAAElFTkSuQmCC">
+            <h3>Stylové</h3>
+            <p>Věděli jste, že v dnešní době většina uživatelů k prohlížení webů preferuje smartphone nebo tablet? My ano a proto naše weby navrhujeme tak, aby byly plně kompatibilní s každým zařízením.</p>
+        </div>
+        <div class="col">
+                <img width="9%" src="data:image/png;base64,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">
+            <h3>Rychlé</h3>
+            <p>Kdo by chtěl zpomalený web? NIKDO. Proto naše weby optimalizujeme i pro ty nejpomalejší, tak aby o Vás uživatelé neztratili zájem a nepreferovali konkurenci. </p>
+        </div>
+        <div class="col">
+                <img width="9%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASjSURBVHhe7Zs7qFxVFIZvfKIoxlgELYz4wEIRIUQtRFTQWPkCEQsDKjaWwRQKKhFFsIgWQqKFKIIiPlCCTcBEUQsfWMTGSkxiSEgKH8Ro1Bj/b3s3Dicznntm/Sc59971wQd3T+b8e6+dM2fm7NkzkyRJkiRJkiRJkixEVsud8sgik5qpPcwuOa6DxSCTGKaGLTZsdecEBskJDJITGCQnMEhOYJCcwCA5gUFyAoPkBAY51hN4mnxQvi93yF/lb5Lbqs3yAXmW7Jt5OYHXyx9k7XOSB+Wr8nzZF7WvMLagFq6UnG309blcI1dIzki8RN4vt8nDkucxkU/KU6QbW922oDEwQevlJ/JHST+b5Any/7hYvi7/lhzzpbxQOrHVbQsagTPmGfmnrPn4vTxRzpVr5XeSY3+SN0oXdUxhbEGznCp5MyDzL8m17AZ5hpyGpfIdSd4heY90YKvbFjTLBkneXnkND8zymfz03z87w0v+BUku/yl3yyi2um1B4jJJgb/LK3hgBK6DGIE3FMbKmRh9OQ9yAp+VZD1XWv3whqQPromX8sCU2Oq2BYmvJVlXldbRRF7GcK6s7+Yfy5vktNjqtgWJ/ZKsZaV1NNGX8dOS/C1yCQ8EsNVtCxJ/SLL6+OALX0nyuaOJYqvbFiTqGbi8tPxw3SPfca9sq9sWJLZLslaWlpeTJdmc5Q5sdduCxHuSLMfntCbnSbL3lFYcW922IMHtG1lPlJaXmyXZ0c+SFVvdtiBxryTrzdLy8rgk+/nSimOr2xYkWLIi65vS8vKhJPuO0opjq9sWJLj2kcWtVpdVlza4F65riZzlDmx124JEXTVZV1peyCT73dKKY6vbFiQ2SrIeLS0vj0iy6cOBrW5bkLhTksV96tnydBmFDLLIJJs+HNjqtgWJc2S9VuHbMkq9LOABSR8OamYYW9Ast8gvJJnf8kAQMsgik2wXtrptQSPwrvmzZHE18jLmawAyuAeOrr40GfQEwlZJ7m2lNR23SzL4DOjGVve4oObCZ9c2PCzJ5UulaXlNkrG2tP7DMb5xdU/FuKDmwmfXNlwg+VqTD9X83RWO4Vgymse39d/Whl4n0MUrkuxp7o15B+fYl0vLj61uW9AYWIKqv0N5iQfmCM/lGI4low9sdduCJnC17NpHff6q0uqHrmOaSB+/VGoy6fFJtOW4tPxSqY/fyjWZ9Pgk2nIc2n4rdyyog54rXZ+/YLlIPiabE9L2Oa0+n2PJWFScJO+SfO6qE4Gj15u2z2nNSwr/RqZzkXZwsA2Nuw/2ANbCuYdlQ+V1ssu9LM/lmBdl/S4YyaYP+lownCmfkr/IWigrJ/dJtu5GYTGCrb/sUq359EWf9D1vYcXlIVl3I7Ad9wPp2HYxCTZq0kfd+kvfjKFty/DgYO/zR7KeEWwMH91M2Tf0RZ+1f8bS545+KyxP1evSbnmrPF4wFsbAWBjT8RzLnGB/MgucDPgt6Vpej8AY6sIDY3PtobZzueR3GwyUXQJDg+0kjI3vZNhqPDg44xhgX8tLDiLLZ71T322HfLFmbIxxX2kNDAaGQ2e+jDNJkiRJkiRJkiTpg5mZfwDD2JfpDljngQAAAABJRU5ErkJggg==">
+            <h3>Na míru</h3>
+            <p>Chceme, aby naši klienti byli nad míru spokojení s našimi službami, proto je pro nás dokonalá spolupráce preferencí. Web uděláme přesně tak, aby seděl vám a i Vašim klientům. </p>
+        </div>
+    </div>
+
+    <div class="layer1">
+        <div class="col">
+            <h3><i class="fas fa-columns"></i> Co nabízíme?</h3> 
+            <img id="portfolio1" width="85%" src="assets/portfolio.png" alt="">
+            <img id="portfolio2" width="85%" src="assets/portfolio2.png" alt="">
+            <img id="portfolio3" width="85%" src="assets/portfolio3.png" alt="">
+        </div>
+        <div class="col">
+            <div class="select-product">
+            <div class="selector">
+                <p>Chtěl bych...</p>
+                <div class="select_arrow">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="select_items">
+                <p id="first"><i class="fas fa-columns"></i> Prezentační web</p>
+                <p id="second"><i class="fas fa-chart-bar"></i> Webovou aplikaci</p>
+                <p id="third"><i class="fas fa-laptop"></i> Administrační systém</p>          
+            </div>
+            </div>
+
+            <div class="lay1">
+                <h4>Prezentační weby</h4>
+                <p>Velkým dnešní trendem jsem právě prezentační weby, které ukáží světu Vás a Vaši práci. </p>
+            </div>
+            <div class="lay2">
+                <h4>Webové aplikace</h4>
+                <p>Bobs and vagene show pls. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto voluptatibus amet voluptatum nihil? Amet dignissimos pariatur possimus veritatis facere ex cum aliquid perspiciatis? Sapiente ipsa exercitationem voluptatum quis? Maiores!</p>
+            </div>
+            <div class="lay3">
+                <h4>Administrační systémy</h4>
+                <p>Bobs and vagene show pls. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto voluptatibus amet voluptatum nihil? Amet dignissimos pariatur possimus veritatis facere ex cum aliquid perspiciatis? Sapiente ipsa exercitationem voluptatum quis? Maiores!</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="layer2">
+       <!-- <h3><i class="fas fa-dollar-sign"></i> Kolik to stojí?</h3> -->
+        <div class="price-modal">
+            <h1>Cena záleží na vás!</h1>
+            <h4>Jsme lidi.</h4>
+            <h4>Napiště nám a domluvíme se.</h4>
+            <i class="fas fa-angle-down"></i>
+        </div>
+    </div>
+
+    <div class="layer3">
+        <div class="container">
+        <div class="col">
+            <h3><i class="fas fa-smile-beam"></i> Přesvědčili jsem vás?</h3>
+            <form action="">
+                <label><i class="fas fa-male"></i> Jméno a příjmení</label>
+                <input type="text" placeholder="Jirka Šrytr">
+                <label><i class="fas fa-envelope"></i> E-mail</label>
+                <input type="email" placeholder="jinambo@seznam.cz">
+                <label><i class="fas fa-info-circle"></i> Detaily</label>
+                <textarea placeholder="Chtěl bych aby můj web..." id="" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+        <div class="col">
+            <h3><i class="fas fa-wallet"></i> Jen pro představu, jaký je váš rozpočet?</h3>
+
+            <div class="selecteurPrix">
+                <div class="PrixMin">10 000 Kč</div>
+                    <div class="range-slider">
+                        <input class="input-range" type="range" value="10" min="10" max="50">
+                    </div>
+                <div class="PrixMin">50 000+ Kč</div>
+            </div>
+            <button>Chci web za <span class="range-value"></span></button>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="col">
+            <p>Foxli.cz</p>
+        </div>
+        <div class="col">
+            <i class="fab fa-facebook"></i> 
+            <i class="fab fa-instagram"></i> 
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
+</body>
+</html>
